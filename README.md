@@ -12,13 +12,8 @@ Azure Databricks · Lakeflow Declarative Pipelines · Auto Loader (`cloudFiles`)
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A["ADLS Gen2<br/>landing/data/"] -->|new JSON file| B["Auto Loader<br/>(cloudFiles)"]
-    B --> C["LDP streaming table<br/>flight_bookings_bronze"]
-    C --> D[("Delta table<br/>Unity Catalog")]
-    B -.->|schema inference + addNewColumns| C
-```
+<img width="1536" height="1024" alt="Streaming Data Pipeline with Auto Loader and Lakeflow" src="https://github.com/user-attachments/assets/f8bff9d0-d36d-4926-a137-6cf54ee21fc0" />
+
 
 | Item | Value |
 |---|---|
