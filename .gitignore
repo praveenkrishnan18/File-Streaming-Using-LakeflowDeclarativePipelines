@@ -1,0 +1,20 @@
+# Databricks
+.databricks/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local/editor
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets / local config
+.env
+*.pem
+*.key
+*.pfx
+secrets.json
